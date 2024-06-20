@@ -10,6 +10,8 @@ window.addEventListener("scroll", () => {
         }
 })
 
+/* ======= Color Change ======= */
+
 const alternateStyles = document.querySelectorAll(".alternate-style");
 function setActiveStyle(color)
 {
