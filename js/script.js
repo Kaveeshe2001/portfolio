@@ -5,3 +5,10 @@ var typed = new Typed(".typing", {
     BackSpeed:60,
     loop:true
 })
+
+/* ==== Nav toggler ==== */
+const navToggle = document.querySelector(".nav-toggler");
+navToggle.addEventListener("click", () => {
+    document.querySelector(".aside").classList.toggle("open");
+    document.querySelector(".main-content").classList.toggle("open");
+})

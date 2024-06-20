@@ -196,7 +196,7 @@ section .container {
     width: 45px;
     border: 1px solid var(--bg-black-50);
     cursor: pointer;
-    position: fixed;
+    position: absolute;
     left: 300px;
     top: 20px;
     border-radius: 5px;
@@ -726,6 +726,18 @@ h3.my-profession {
         left: -270px;
     }
 
+    .aside .nav-toggler {
+        display: flex;
+    }
+
+    .aside.open {
+        left: 0;
+    }
+
+    .main-content.open {
+        padding-left: 270px;
+    }
+
     .main-content {
         padding-left: 0;
     }
@@ -765,6 +777,17 @@ h3.my-profession {
     .about .about-content .personal-info {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+}
+
+@media (max-width:600px) {
+    .aside.open {
+        width: 100%;
+    }
+
+    .aside.open .nav-toggler {
+        left: 86%;
+        top: 10px;
     }
 }
 
